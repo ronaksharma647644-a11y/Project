@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <style>
+    /* ---- Element Selector ---- */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4; /* HEX */
+      margin: 20px;
+    }
+
+    /* ---- ID Selector ---- */
+    #main-title {
+      color: rgb(34, 139, 34); /* RGB */
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    /* ---- Class Selector ---- */
+    .highlight {
+      background-color: rgba(255, 215, 0, 0.3); /* RGBA */
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    /* ---- Attribute Selector ---- */
+    a[target="_blank"] {
+      color: hsl(200, 80%, 40%); /* HSL */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a[target="_blank"]:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- Pseudo-class Selector ---- */
+    p:hover {
+      color: #e63946;
+    }
+
+    /* ---- Pseudo-element Selector ---- */
+    p::first-line {
+      font-weight: bold;
+      color: rgb(0, 102, 204);
+    }
+
+    /* ---- Unordered List ---- */
+    ul.movies {
+      list-style-type: square;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    ul.movies li {
+      margin: 5px 0;
+    }
+    /* Style favorite movie */
+    ul.movies li.favorite {
+      color: #ff4500;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* ---- Ordered List ---- */
+    ol.cities {
+      padding: 10px;
+      background-color: rgba(0, 128, 128, 0.1);
+      border-radius: 8px;
+    }
+    ol.cities li {
+      margin: 4px 0;
+      padding: 4px;
+      border-left: 5px solid hsl(340, 80%, 50%);
+      background: #fafafa;
+    }
+    /* Random fun CSS */
+    ol.cities li:nth-child(2) {
+      color: #006400;
+      font-style: italic;
+    }
+    ol.cities li:nth-child(3) {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-title">About Us</h1>
+  
+  <p>
+    Welcome to our <span class="highlight">company</span>! 
+    We are passionate about delivering quality and innovation. 
+    Learn more by visiting our 
+    <a href="https://example.com" target="_blank">official website</a>.
+  </p>
+  
+  <h2>Our Favorite Movies</h2>
+  <ul class="movies">
+    <li>Squid Games</li>
+    <li class="favorite">Money heist</li>
+    <li>Stranger Things</li>
+    <li>Anabelle</li>
+  </ul>
+
+  <h2>Top Cities</h2>
+  <ol class="cities">
+    <li>New York</li>
+    <li>Tokyo</li>
+    <li>Paris</li>
+    <li>London</li>
+  </ol>
+</body>
+</html>
